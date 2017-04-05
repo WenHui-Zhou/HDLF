@@ -1,0 +1,60 @@
+/* pages/itemDetail/itemDetail.wxss */
+.slip-img{
+   float:left;
+   height: 6cm;
+   width: 100%;
+   margin-top: 0.3cm;
+}
+.image-style{
+  width: 100%;
+  height: 100%;
+}
+.itemName{
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 30px;
+    width: 100%;
+}
+.infoDetail{
+    float: left;
+  margin-left: 5px;
+  margin-top: 20px;
+  font-size: 20px;
+  clear: left;
+  font-weight: bold;
+}
+.detailContent{
+  float: left;
+  margin-left: 40px;
+  margin-top: 10px;
+  font-size: 15px;
+  clear: left;
+}
+.detailmessage{
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    float: left;
+    width: 100%;
+    margin: 10px 5px 10px 5px;
+    padding-bottom: 10px;
+}
+.confirmBtn{
+    float: left;
+    clear: left;
+    width: 100%;
+    margin-top: 25px;
+}
+.inputView{
+    float: left;
+    clear: left;
+    width: 100%;
+}
+.contactInput{
+    background-color:white;
+    border-radius: 5px;
+    height: 40px;
+    width: 99%;
+    border: 1px solid slategrey;
+}

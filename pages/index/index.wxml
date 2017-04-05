@@ -1,0 +1,90 @@
+<!--index.wxml-->
+<view class="container">
+
+<!--导航条位置-->
+<view class="nav-top">
+  <text bindtap="clickIndex" class="nav-title">首页</text>
+  <text bindtap="clickrecond" class="nav-title" style="padding-left:65px"><!--近一周--></text>
+  <text bindtap="clickrecond" class="nav-title">招领记录</text>
+</view>
+
+<!--导航条选中时底下的小黑条-->
+<view class="menuFlag">
+  <view class="indexblock" style="background-color:{{indexview_color}}"></view>
+  <view class="recondblock" style="background-color:{{recondview_color}}"></view>
+</view>
+
+<!--展示首页内容-->
+<view wx:if="{{a=='1'}}">
+<!--宣传图片位置-->
+
+<swiper class="slip-img" indicator-dots="true"  autoplay="true" interval="3000" duration="1000">
+<swiper-item>
+<view class="slip-img">
+  <image class="image-style" src="../../image/lost2.jpg"></image>
+</view>
+</swiper-item>
+<swiper-item>
+<view class="slip-img">
+  <image class="image-style" src="../../image/lost1.jpg"></image>
+</view>
+</swiper-item>
+<swiper-item>
+<view class="slip-img">
+  <image class="image-style" src="../../image/loseslogan.jpg"></image>
+</view>
+</swiper-item>
+</swiper>
+
+<!--失物展示区-->
+<view class="lose-area">
+<text class="lost-slogan">Lost-property</text>
+
+<view class="lost-slogan2">失物列表</view>
+<!--第一个-->
+  <view class="losegroup" wx:for="{{Rs}}" wx:key="{{index}}" >
+  <view bindtap="itempage"  data-index="{{index}}" class="loseimage" >
+   <image class="image-style"  src="{{item.ImgUrl}}"></image>
+  </view>
+  <view bindtap="itempage" data-index="{{index}}" class="inducttitle">
+    <text class="fonttitle">物品名:</text>
+    <text class="fontcontent">{{item.Name}}\n</text>
+    <text class="fonttitle">拾获日期:</text>
+    <text class="fontcontent">{{item.Time}}\n</text>
+  </view>
+  </view>
+<!--第一个结束-->
+  </view>
+</view>
+
+<!--展示招领记录页内容-->
+<view wx:if="{{a=='2'}}">
+<!--失物展示区-->
+<view class="lose-area">
+<text class="lost-slogan">Found-property</text>
+
+<view class="lost-slogan2">招领记录</view>
+
+<!--第一个-->
+  <view class="losegroup" wx:for="{{Rs}}"  >
+  <view bindtap="itempage" class="loseimage" >
+   <image class="image-style"  src="{{item.ImgUrl}}"></image>
+  </view>
+  <view bindtap="itempage" class="inducttitle">
+    <text class="fonttitle">物品名:</text>
+    <text class="fontcontent">{{item.Name}}\n</text>
+    <text class="fonttitle">认领日期:</text>
+    <text class="fontcontent">{{item.Time}}\n</text>
+    <text class="fonttitle">认领人电话:</text>
+    <text class="fontcontent">{{item.Contact}}\n</text>
+  </view>
+  </view>
+<!--第一个结束-->
+
+
+ 
+  </view>
+</view>
+
+</view>
+

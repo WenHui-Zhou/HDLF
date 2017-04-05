@@ -1,0 +1,47 @@
+/* pages/managerConfirm/managerConfirm.wxss */
+.userTips{
+   float:left;
+   height: 4cm;
+   width: 99%;
+   margin-top: 0.5cm;
+   background-color: #EFEFEF;
+   box-shadow: 5px;
+   border: 1px solid lightgrey;
+   border-radius: 5px;
+}
+.tipstitle{
+  margin-left: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  border-bottom: 2px solid;
+  padding-bottom: 7px; 
+  color: dimgrey;
+}
+.tipsContent{
+    display: block;
+    margin-left: 50px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.confirmPart{
+    margin-top: 2cm;
+    float: left;
+    clear: left;
+    width: 100%;
+}
+.contact{
+    background-color:white;
+    border-radius: 5px;
+    height: 40px;
+    width: 99%;
+    border: 1px solid slategrey;
+}
+.confirmBtn1{
+    float: left;
+    clear: left;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+

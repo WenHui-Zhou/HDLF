@@ -1,0 +1,107 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-top{
+  height: 1cm;
+  /*background-color: red;*/
+  position: relative;
+  width: 100%;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  float: left;
+}
+.nav-title{
+  display: block;
+  margin-top:10px;
+  padding-left: 45px;
+  padding-right: 30px;
+  float: left;
+  font-size: 14px;
+}
+
+.menuFlag{
+  width: 100%;
+  height: 5px;
+  float: left;
+  /*background: red;*/
+}
+.indexblock{
+  width: 30px;
+  height: 2px;
+  margin-left: 45px;
+  float: left;
+}
+.recondblock{
+  width: 57px;
+  height: 2px;
+  margin-left: 160px;
+  float: left;
+}
+.slip-img{
+   float:left;
+   height: 5cm;
+   /*background-color: red;*/
+   width: 100%;
+   margin-top: 0.1cm;
+}
+.image-style{
+  width: 100%;
+  height: 100%;
+}
+.lose-area{
+   width: 100%;
+   height: 100%;
+   /*background: greenyellow;*/
+   float: left;
+   padding-top: 0.5cm;
+}
+.lost-slogan{
+  margin-left: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-weight: 800;
+  border-bottom: 2px solid;
+  padding-bottom: 7px;
+}
+.lost-slogan2{
+  margin-left: 10px;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.losegroup{
+  margin: 5px;
+  height: 6cm;
+  /*background: navajowhite;*/
+  width: 4.3cm;
+  margin-left: 10px;
+  float: left;
+}
+.loseimage{
+  height: 4.3cm;
+  width: 4.3cm;
+  /*background-color: lightpink;*/
+}
+.inducttitle{
+  width: 100%;
+  /*background-color: lightblue;*/
+  height: 1.5cm;
+}
+.fonttitle{
+   margin-left: 5px;
+  font-size: 12px;
+}
+.fontcontent{
+   margin-left: 5px;
+  font-size: 12px;
+  line-height: 5px;
+}
+
+
+
+

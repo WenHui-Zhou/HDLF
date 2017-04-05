@@ -1,0 +1,8 @@
+<!--logs.wxml-->
+<view >
+  <block>
+    <text style="margin-top:2cm;padding:0.5cm;" >您的信息已收到，感谢您的使用</text>
+  </block>
+  <button type="default" bindtap="adddata">
+  插入数据 </button>
+</view>

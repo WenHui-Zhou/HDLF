@@ -1,0 +1,90 @@
+/* pages/register/register.wxss */
+.itemName{
+   float:left;
+   height: 2cm;
+   width: 100%;
+   margin-top: 0.3cm;
+   text-align: center;
+   border: 1px solid lightgrey;
+   border-radius: 5px;
+}
+.titleText{
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.itemFrame{
+   float:left;
+   /*height: 15cm;*/
+   width: 100%;
+   margin-top: 0.3cm;
+   border: 1px solid lightgrey;
+   border-radius: 5px;
+}
+.DetailName{
+    float: left;
+  margin-left: 15px;
+  margin-top: 20px;
+  /*font-size: 20px;*/
+  clear: left;
+  /*font-weight: bold;*/
+}
+.contact{
+    float: left;
+    display: block;
+    background-color:white;
+    border-radius: 2px;
+    width: 65%;
+    height: 30px;
+    margin-top: 20px;
+    border: 1px solid slategrey;
+}
+.contact1{
+    float: left;
+    display: block;
+    background-color:white;
+    border-radius: 2px;
+    width: 65%;
+    margin-top: 20px;
+    border: 1px solid slategrey;
+}
+.pickerChoose{
+    float: left;
+    display: block;
+    background-color:white;
+    width: 65%;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 2px;
+    border: 1px solid slategrey;
+}
+.uploadpic{
+    display: block;
+    float: left;
+    margin: 15px;
+    margin-top: 40px;
+    margin-right: 100px;
+}
+.imageStorage{
+    float: left;
+    padding-left: 20px;
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.imageType{
+    display: block;
+    float: left;
+    padding: 2px;
+   border: 1px solid gray;
+    height: 4cm;
+    width: 100%;
+}
+.confirmBtn{
+    float: left;
+    clear: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

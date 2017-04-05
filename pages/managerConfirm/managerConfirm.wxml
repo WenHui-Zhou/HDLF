@@ -1,0 +1,16 @@
+<!--pages/managerConfirm/managerConfirm.wxml-->
+<view class="container">
+    <view class="userTips">
+    <!--小贴士-->
+    <text class="tipstitle">
+        温馨提示：\n
+    </text>
+        <text class="tipsContent">请到华电操场失物招领处，并联系负责人出示\n相关证件。审核通过后由负责人输入确认码，\n确认招领。</text>
+    </view>
+      <!--管理员输入确认码：规定一个密码串如123456-->
+    <view class="confirmPart">
+    <input class="contact" type="text" placeholder="请联系负责人输入确认码..." bindinput="StoreCode"/>
+    </view>
+    <!--确认领取的按钮-->
+<button type="primary" bindtap="aTips" class="confirmBtn1">确认领取</button>
+</view>

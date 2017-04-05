@@ -1,0 +1,43 @@
+<!--pages/itemDetail/itemDetail.wxml-->
+<view class="container">
+
+<!--物品图片展示页-->
+<swiper class="slip-img" indicator-dots="true"  autoplay="true" interval="3000" duration="1000">
+
+<!--<swiper-item>
+  <view class="slip-img">
+    <image class="image-style"             src="../../image/item1.jpg"></image>
+  </view>
+</swiper-item>-->
+
+<swiper-item  wx:for="{{ImgArray}}" wx:key="{{inedx}}">
+  <view class="slip-img">
+    <image class="image-style" src="{{item}}"></image>
+  </view>
+</swiper-item>
+
+<!--<swiper-item>
+  <view class="slip-img">
+    <image class="image-style"             src="../../image/itemglass2.jpg"></image>
+  </view>
+</swiper-item>-->
+
+</swiper>
+
+<!--物品名称-->
+<view class="itemName">{{ItemNam}}</view>
+<!--详细信息描述-->
+<view class="detailmessage">
+<view class="infoDetail">详细介绍：</view>
+<view class="detailContent">{{ItemDetails}}</view><!--捡到一个乳白色杯子，杯子上有划痕-->
+<view class="infoDetail">拾获时间：</view>
+<view class="detailContent">{{GetTime}}</view><!--2017/3/7-->
+<view class="infoDetail">拾获地点：</view>
+<view class="detailContent">{{FoundLocation}}</view><!--华电操场路-->
+</view>
+<!--联系方式输入框-->
+<view class="inputView"><input class="contactInput" type="text" placeholder="请输入联系电话..." bindinput="ConfirmContact"/></view>
+
+<!--确认领取的按钮-->
+<button type="primary"  class="confirmBtn" bindtap="btnclick">确认领取</button>
+</view>
